@@ -8,13 +8,16 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link" href="{{config('app.url')}}">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/about">About</a>
+                <a class="nav-link" href="{{config('app.url')}}/about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/services">Services</a>
+                <a class="nav-link" href="{{config('app.url')}}/services">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{config('app.url')}}/posts">Blog</a>
             </li>
         </ul>
     </div>
