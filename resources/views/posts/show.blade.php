@@ -4,6 +4,7 @@
 
     <a href="{{url('/posts')}}" class="btn btn-outline-secondary mb-3">Go Back</a>
     <h1>{{$post->title}}</h1>
+    <img src="{{config('app.url')}}/storage/cover_images/{{$post->cover_image}}" alt="" class="img-fluid mb-3">
     <div>
         {!!$post->body!!}
     </div>
